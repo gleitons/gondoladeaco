@@ -9,8 +9,8 @@
     align-items: center;
     justify-content: space-between;
 }
-.menuTop img {
-    width: 100px;
+.menuTop  {
+    font-size: 45px;
 }
 .menuTop ul {
     display: flex;
@@ -25,7 +25,11 @@
     color: rgb(77, 77, 77);
  }
  .construcao {
+    text-align: center;
     background-color: red;
     color: white;
     padding: 3px;
+ }
+ .aling {
+    align-items: center;
  }

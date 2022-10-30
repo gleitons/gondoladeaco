@@ -1,5 +1,9 @@
 import Link from "next/link"
 import styles from '../styles/Menu.module.css'
+import { AiFillAlert } from "react-icons/ai";
+import { BsBookshelf } from "react-icons/bs";
+import { BsFillHandThumbsUpFill } from "react-icons/bs";
+import { RiLogoutCircleLine } from "react-icons/ri";
 export default function MenuTop() {
     return (
         <div className={styles.top}>
@@ -8,13 +12,14 @@ export default function MenuTop() {
             </div>
             <div className={styles.menuTop}>
                 <div>
-                    <img src="./img/logo-gondola-de-aco-2.png" alt="" />
+                    <Link rel="stylesheet" href="/"><RiLogoutCircleLine/></Link>
                 </div>
                 <div>
                     <ul>
-                        <Link href="/"><li>Inicio</li></Link>
-                        <Link href="/gondolas"><li>Gôndolas</li></Link>
-                        <Link href="/sobre"><li>Sobre</li></Link>
+                        <Link href="/"><li className={styles.aling}><AiFillAlert/> Inicio</li></Link>
+                        <Link href="/gondolas"><li className={styles.aling}> <BsBookshelf/> Gôndolas</li></Link>
+                        <Link href="/sobre"><li className={styles.aling}> <BsFillHandThumbsUpFill/> Sobre</li></Link>
+                        
                     </ul>
                 </div>
             </div>
