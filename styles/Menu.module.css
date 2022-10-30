@@ -1,0 +1,31 @@
+.top {
+    /* border-bottom: black solid 1px; */
+    box-shadow: rgba(0, 0, 0, 0.522) 0px 2px 3px 0px;
+}
+.menuTop {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menuTop img {
+    width: 100px;
+}
+.menuTop ul {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+    font-size: 20px;
+}
+.menuTop li {
+   text-transform: uppercase;
+}
+.menuTop li:hover {
+    color: rgb(77, 77, 77);
+ }
+ .construcao {
+    background-color: red;
+    color: white;
+    padding: 3px;
+ }

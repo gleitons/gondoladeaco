@@ -1,12 +1,19 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import Link from 'next/link'
+import MenuTop from '../components/MenuTop'
 
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <h1>Hello Word</h1>
-      <h2>Construindo um Curso Next Js</h2>
+    <div>
+      <MenuTop/>
+      <h1>Gôndola de Aço</h1>
+      <h2>Orçamento gratuito</h2>
+      <div>
+      <img src="./img/gondolas-otimize-espaco.jpg" alt="" />
+      </div>
+      
     </div>
   )
 }
