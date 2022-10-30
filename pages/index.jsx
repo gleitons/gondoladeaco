@@ -11,7 +11,7 @@ export default function Home() {
       <h1>Gôndola de Aço</h1>
       <h2>Orçamento gratuito</h2>
       <div>
-      <img src="./img/gondolas-otimize-espaco.jpg" alt="" />
+      <img src="./img/gondolas-otimize-espaco-min-min.jpg" alt="" />
       </div>
       
     </div>
