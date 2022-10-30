@@ -18,6 +18,7 @@
     list-style: none;
     font-size: 20px;
 }
+
 .menuTop li {
    text-transform: uppercase;
 }
@@ -32,4 +33,14 @@
  }
  .aling {
     align-items: center;
+ }
+ @media (max-width:868px) {
+    .menuTop{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .menuTop ul {
+        gap: 5px;
+    }
  }
