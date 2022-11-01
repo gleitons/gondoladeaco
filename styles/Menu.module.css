@@ -1,63 +1,71 @@
 .top {
-    /* border-bottom: black solid 1px; */
-    box-shadow: rgba(0, 0, 0, 0.522) 0px 2px 3px 0px;
+  /* border-bottom: black solid 1px; */
+  box-shadow: rgba(0, 0, 0, 0.522) 0px 2px 3px 0px;
 }
 .menuTop {
-    width: 60%;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  width: 60%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.menuTop  {
-    font-size: 45px;
+.menuTop {
+  font-size: 45px;
 }
 .dflex {
-    margin: auto;
-    padding: 20px;
-    font-size: 20px;
-    color: white;
-    background-color: red;
-    width: 60%;
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
+  margin: auto;
+  padding: 20px;
+  font-size: 20px;
+  color: white;
+  background-color: red;
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
 }
-.dflex a{
-    
-    color: white;
-    text-decoration: none;
-   
+.dflex a {
+  color: white;
+  text-decoration: none;
 }
 .menuTop ul {
-    display: flex;
-    gap: 50px;
-    list-style: none;
-    font-size: 20px;
+  display: flex;
+  gap: 50px;
+  list-style: none;
+  font-size: 20px;
 }
 
 .menuTop li {
-   text-transform: uppercase;
+  
+  text-transform: uppercase;
+}
+.menuTop a {
+    text-decoration: none;
+    color: black;
 }
 .menuTop li:hover {
-    color: rgb(77, 77, 77);
- }
- .construcao {
+  color: rgb(77, 77, 77);
+}
+.construcao {
+  text-align: center;
+  background-color: red;
+  color: white;
+  padding: 3px;
+}
+.aling {
+  align-items: center;
+}
+@media (max-width: 868px) {
+  .menuTop {
+    display: block;
+    width: 100%;
     text-align: center;
-    background-color: red;
-    color: white;
-    padding: 3px;
- }
- .aling {
-    align-items: center;
- }
- @media (max-width:868px) {
-    .menuTop{
-        display: block;
-        width: 100%;
-        text-align: center;
-    }
-    .menuTop ul {
-        gap: 5px;
-    }
- }
+  }
+  .menuTop ul {
+    gap: 5px;
+  }
+  .dflex {
+    width: 100%;
+    gap: 10px;
+    font-size: 20px;
+  }
+}
