@@ -17,7 +17,7 @@ export default function Megasena({megaSena}) {
             <h2>Resultado da Mega Sena</h2>
             <h3>Ultimo resultado</h3>
             {megaSena.map((mega) => (
-                <li >{mega}</li>
+                <li key={mega}>{mega}</li>
             ))}
         </>
     )
