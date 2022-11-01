@@ -17,6 +17,10 @@ export default function Footer() {
                 <Link href="/lp">
                     <li>Landing Page</li>
                 </Link>
+                <Link href="/ToDo">
+                    <li>ToDos</li>
+                </Link>
+               
             </ul>
         </div>
     )

@@ -22,6 +22,7 @@ export default function MenuTop() {
                         <Link href="/gondolas"><li className={styles.aling}> <BsBookshelf/> Gôndolas</li></Link>
                         <Link href="/sobre"><li className={styles.aling}> <BsFillHandThumbsUpFill/> Sobre</li></Link>
                         <Link href="/lp"><li className={styles.aling}> <GiIsland/> Lp</li></Link>
+                        <Link href="/todos"><li className={styles.aling}> <GiIsland/>ToDos</li></Link>
                         
                     </ul>
                 </div>
