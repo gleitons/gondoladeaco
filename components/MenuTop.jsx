@@ -5,7 +5,7 @@ import { BsBookshelf } from "react-icons/bs";
 import { BsFillHandThumbsUpFill } from "react-icons/bs";
 import { RiLogoutCircleLine } from "react-icons/ri";
 import { GiIsland } from "react-icons/gi";
-import { GiClover } from "react-icons/gi";
+import { MdCatchingPokemon } from "react-icons/md";
 
 export default function MenuTop() {
     return (
@@ -24,7 +24,7 @@ export default function MenuTop() {
                         <Link href="/sobre"><li className={styles.aling}> <BsFillHandThumbsUpFill/> Sobre</li></Link>
                         <Link href="/lp"><li className={styles.aling}> <GiIsland/> Lp</li></Link>
                         <Link href="/todos"><li className={styles.aling}> <GiIsland/>ToDos</li></Link>
-                        <Link href="/mega-sena"><li className={styles.aling}> <GiClover/>Loteria</li></Link>
+                        <Link href="/pokemon"><li className={styles.aling}> <MdCatchingPokemon/>Pokemon</li></Link>
 
                         
                     </ul>
