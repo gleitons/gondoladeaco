@@ -3,6 +3,8 @@ import styles from '../../styles/InfoPokemon.module.css'
 import Image from "next/image";
 import {IoArrowBackCircleSharp} from 'react-icons/io5'
 import Link from "next/link";
+import { useRouter } from "next/router";
+import loading from "../../public/img/loading-gleiton-aparecido-soares-de-souza.svg"
 
 
 export const getStaticPaths = async () => {
@@ -17,7 +19,7 @@ export const getStaticPaths = async () => {
 
     })
     return {
-        paths, fallback: false,
+        paths, fallback: true,
     }
 
 }
@@ -31,6 +33,21 @@ export const getStaticProps = async (context) => {
     }
 }
 export default function Pokemon({ pokemon }) {
+    const route = useRouter();
+
+    if (route.isFallback) {
+        return (
+            <>
+            
+            <div className={styles.title}>
+            <h3 >Carregando...</h3>
+            <Image src={loading} alt="Carregando Pokemon" />
+            </div>
+            
+            </>
+        
+        )
+    }
     const namePage = pokemon.name
     const page = namePage[0].toUpperCase() + namePage.substring(1);
     return (

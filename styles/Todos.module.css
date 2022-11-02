@@ -8,3 +8,11 @@
     padding-bottom: 1em;
     border-bottom: 1px rgb(152, 152, 152) solid;
 }
+
+@media (max-width: 568px) {
+    .todolist {
+       
+        width: 100%;
+        margin: auto;
+    }
+}

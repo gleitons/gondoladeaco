@@ -5,7 +5,7 @@ import CardPokemon from "../../components/CardPokemon";
 
 
 export async function getStaticProps() {
-    const maxPokemo = 50;
+    const maxPokemo = 52;
     const api = await fetch(`https://pokeapi.co/api/v2/pokemon/?limit=${maxPokemo}`);
     const data = await api.json();
     
@@ -22,17 +22,16 @@ export async function getStaticProps() {
 }
 
 export default function Pokemon({pokemons}) {
+    
     return (
         <>
             <div className={styles.titleP}>
                 <h2>POKE<span>NEXT</span></h2>
                 <CgPokemon/>
             </div>
-            <h3>Ultimo resultado</h3>
+            <h3>Projeto Next JS</h3>
             <div className={styles.pokemon_container}>
-                {pokemons.map((poke) => (
-                     
-
+                {pokemons.map((poke) => (                   
                    <CardPokemon key={poke.id} pokemon={poke} />
                 ))}
             </div>

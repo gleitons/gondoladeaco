@@ -45,3 +45,13 @@
     color: rgb(255, 255, 255);
     
 }
+
+@media (max-width: 568px) {
+    .card {
+        
+        padding: 2em 2em;
+        margin-bottom: 2em;
+        width: 48%;
+        margin: 2px 2px;
+    }
+}
