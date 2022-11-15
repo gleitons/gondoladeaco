@@ -5,7 +5,7 @@ import CardPokemon from "../../components/CardPokemon";
 
 
 export async function getStaticProps() {
-    const maxPokemo = 52;
+    const maxPokemo = 200;
     const api = await fetch(`https://pokeapi.co/api/v2/pokemon/?limit=${maxPokemo}`);
     const data = await api.json();
     
@@ -23,6 +23,16 @@ export async function getStaticProps() {
 
 export default function Pokemon({pokemons}) {
     
+    // function contagem() {
+    // for (let i = 1; i < 15; i++) {
+    //     document.querySelector('#pokemonG').innerHTML += `<Link className={styles.cont}  href="/pokemon/${i}"># ${i}</Link>`;
+
+        
+        
+    // }
+    
+//}
+
     return (
         <>
             <div className={styles.titleP}>
@@ -35,6 +45,9 @@ export default function Pokemon({pokemons}) {
                    <CardPokemon key={poke.id} pokemon={poke} />
                 ))}
             </div>
+            
+            {/* <div  onClick={contagem} > <button >Veja Mais</button></div>
+            <button id="pokemonG"></button> */}
         </>
     )
 }
