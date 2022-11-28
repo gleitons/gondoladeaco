@@ -57,7 +57,7 @@ export default function Pokemon({ pokemon }) {
             </Head>
             <div className={styles.pokemon_container}>
             <div className={styles.IconBack}>
-                    <Link href={`/pokemon/#${pokemon.name}`} >
+                    <Link href="/pokemon" >
                         <IoArrowBackCircleSharp  />
                     </Link>
                 </div>

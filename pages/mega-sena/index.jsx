@@ -1,12 +1,12 @@
 import Link from "next/link"
 import {CgPokemon} from "react-icons/cg";
 import styles from '../../styles/IndexP.module.css'
-import CardPokemon from "../../components/CardPokemon";
+import MegaSena from "../../components/CardPokemon";
 
 
 export async function getStaticProps() {
-    const maxPokemo = 200;
-    const api = await fetch(`https://pokeapi.co/api/v2/pokemon/?limit=${maxPokemo}`);
+    //const maxMega = 200;
+    const api = await fetch(`https://pokeapi.co/api/v2/pokemon/?limit=10`);
     const data = await api.json();
     
     data.results.forEach((item, index) => {
@@ -15,13 +15,13 @@ export async function getStaticProps() {
 
     return {
         props: {
-           pokemons: data.results,
+           megasenaR: data.results,
         }
     }
 
 }
 
-export default function Pokemon({pokemons}) {
+export default function MegaSenaRe({megasenaR}) {
     
     // function contagem() {
     // for (let i = 1; i < 15; i++) {
@@ -40,10 +40,9 @@ export default function Pokemon({pokemons}) {
                 <CgPokemon/>
             </div>
             <h3>Projeto Next JS</h3>
-            
             <div className={styles.pokemon_container}>
-                {pokemons.map((poke) => (                   
-                   <CardPokemon key={poke.id} pokemon={poke} />
+                {megasenaR.map((poke) => (                   
+                   <MegaSena key={poke.id} pokemon={poke} />
                 ))}
             </div>
             

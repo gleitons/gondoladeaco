@@ -3,23 +3,23 @@ import Link from "next/link"
 
 import styles from "../styles/Card.module.css"
 
-export default function CardPokemon({ pokemon }) {
+export default function MegaSena({ megasenaR }) {
                 //const linkUrl = pokemon.name.replace(/' '/g, '-')
     return (
 
-        <div id={pokemon.name} className={styles.card}>
+        <div className={styles.card}>
             <Image
-                src={`https://cdn.traction.one/pokedex/pokemon/${pokemon.id}.png`}
+                src={`https://cdn.traction.one/pokedex/pokemon/${megasenaR.id}.png`}
                 width='120'
                 height='120'
-                alt={pokemon.name}
+                alt={megasenaR.id}
             />
 
-            <p className={styles.id}>#{pokemon.id}</p>
+            {/* <p className={styles.id}>#{megasenaR.sorteio}</p>
             <h3 className={styles.title}>{pokemon.name}</h3>
             <Link href={`/pokemon/${pokemon.id}`} className={styles.btn} >
                 <p>Detalhes</p>
-            </Link>
+            </Link> */}
         </div>
     )
 }
